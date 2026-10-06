@@ -7,21 +7,24 @@ root = "inventory"
 
 [[package]]
 name = "libiconv"
-source = "path+../.recipes/libxml2/../libiconv"
+version = "1.19.0"
+source = "registry+https://molto-registry.molto-build.workers.dev"
 checksum = "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6"
 scopes = ["runtime"]
 dependencies = []
 
 [[package]]
 name = "libpq"
-source = "path+../.recipes/libpq"
+version = "18.6.0"
+source = "registry+https://molto-registry.molto-build.workers.dev"
 checksum = "555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f"
 scopes = ["runtime"]
 dependencies = ["openssl"]
 
 [[package]]
 name = "libxml2"
-source = "path+../.recipes/libxml2"
+version = "2.15.4"
+source = "registry+https://molto-registry.molto-build.workers.dev"
 checksum = "98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821"
 scopes = ["runtime"]
 dependencies = ["libiconv", "zlib"]

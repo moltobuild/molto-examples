@@ -1,10 +1,9 @@
 name: inventory
 
-# The inventory example against a real PostgreSQL 18 on every platform molto
-# supports: libpq, libxml2 and libiconv compiled from their official tarballs,
-# each configured by its own configure, plus zlib and OpenSSL from the
-# registry. The recipes' own checks run first, so a red job says which library
-# broke before it says the example did.
+# The inventory example against a real PostgreSQL on every platform molto
+# supports: libpq, libxml2 and libiconv from the registry, each compiled from
+# its official tarball after molto runs its own configure, plus zlib and
+# OpenSSL.
 
 on:
   push:
@@ -17,9 +16,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # molto 0.56 runs a dependency's configure; moltobuild/molto#111 adds .tar.xz
-  # on Windows. A release once that is in one.
-  MOLTO_REF: fix/windows-xz-provide-dirs
+  # The first release that runs a dependency's configure everywhere.
+  MOLTO_REF: v0.58.0
 
 jobs:
   linux:
@@ -60,11 +58,8 @@ jobs:
           path: .molto
       - name: Build molto
         run: make -C .molto build CC=gcc
-      - name: The recipes' checks
-        timeout-minutes: 25
-        run: ./.github/run-checks.sh "$GITHUB_WORKSPACE/.molto/build/molto"
       - name: inventory
-        timeout-minutes: 10
+        timeout-minutes: 30
         run: ./.github/run-inventory.sh "$GITHUB_WORKSPACE/.molto/build/molto"
 
   macos:
@@ -88,11 +83,8 @@ jobs:
           path: .molto
       - name: Build molto
         run: make -C .molto build CC=clang
-      - name: The recipes' checks
-        timeout-minutes: 25
-        run: ./.github/run-checks.sh "$GITHUB_WORKSPACE/.molto/build/molto"
       - name: inventory
-        timeout-minutes: 10
+        timeout-minutes: 30
         run: ./.github/run-inventory.sh "$GITHUB_WORKSPACE/.molto/build/molto"
 
   windows:
@@ -129,11 +121,7 @@ jobs:
       - name: Build molto
         shell: msys2 {0}
         run: make -C .molto build CC=gcc
-      - name: The recipes' checks
-        timeout-minutes: 25
-        shell: msys2 {0}
-        run: ./.github/run-checks.sh "$PWD/.molto/build/molto.exe"
       - name: inventory
-        timeout-minutes: 10
+        timeout-minutes: 30
         shell: msys2 {0}
         run: ./.github/run-inventory.sh "$PWD/.molto/build/molto.exe"

@@ -1,0 +1,338 @@
+[
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/buf.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/buf.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/buf.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/buf.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/chvalid.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/chvalid.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/chvalid.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/chvalid.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/dict.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/dict.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/dict.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/dict.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/encoding.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/encoding.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/encoding.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/encoding.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/entities.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/entities.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/entities.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/entities.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/error.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/error.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/error.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/error.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/globals.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/globals.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/globals.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/globals.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/hash.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/hash.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/hash.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/hash.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/list.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/list.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/list.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/list.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parser.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parser.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parser.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parser.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parserInternals.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parserInternals.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parserInternals.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/parserInternals.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/SAX2.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/SAX2.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/SAX2.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/SAX2.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/threads.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/threads.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/threads.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/threads.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/tree.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/tree.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/tree.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/tree.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/uri.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/uri.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/uri.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/uri.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/valid.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/valid.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/valid.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/valid.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlIO.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlIO.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlIO.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlIO.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmemory.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmemory.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmemory.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmemory.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlstring.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlstring.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlstring.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlstring.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/c14n.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/c14n.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/c14n.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/c14n.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/catalog.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/catalog.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/catalog.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/catalog.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/debugXML.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/debugXML.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/debugXML.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/debugXML.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLparser.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLparser.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLparser.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLparser.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLtree.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLtree.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLtree.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/HTMLtree.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmodule.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmodule.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmodule.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlmodule.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlsave.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlsave.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlsave.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlsave.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/pattern.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/pattern.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/pattern.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/pattern.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlreader.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlreader.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlreader.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlreader.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlregexp.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlregexp.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlregexp.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlregexp.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/relaxng.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/relaxng.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/relaxng.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/relaxng.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemas.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemas.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemas.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemas.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemastypes.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemastypes.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemastypes.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlschemastypes.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlwriter.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlwriter.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlwriter.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xmlwriter.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xinclude.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xinclude.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xinclude.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xinclude.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpath.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpath.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpath.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpath.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xlink.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xlink.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xlink.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xlink.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpointer.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpointer.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpointer.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/xpointer.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libxml2/check",
+    "file": "src/main.c",
+    "output": "build/debug/obj/src/main.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/dev/recipes/libxml2/check/src/main.c", "-o", "/Users/black/dev/recipes/libxml2/check/build/debug/obj/src/main.c.o", "-O0", "-g", "-DMOLTO_PKG_NAME=\"libxml2_check\"", "-DMOLTO_PKG_VERSION=\"0.1.0\"", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-D_LARGEFILE64_SOURCE", "-I/Users/black/dev/recipes/libxml2/check/src", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/libxml2/98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821/any/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  }
+]

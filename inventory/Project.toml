@@ -16,8 +16,6 @@ debug_info = true
 opt_level = 3
 debug_info = false
 
-# Until the recipes are published, the copies under .recipes/; afterwards
-# libpq = "18.6.0" and libxml2 = "2.15.4".
 [deps]
-libpq = { path = "../.recipes/libpq" }
-libxml2 = { path = "../.recipes/libxml2" }
+libpq = "18.6.0"
+libxml2 = "2.15.4"

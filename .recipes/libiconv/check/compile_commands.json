@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "/Users/black/dev/recipes/libiconv/check",
+    "file": "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c", "-o", "/Users/black/dev/recipes/libiconv/check/build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/iconv.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libiconv/check",
+    "file": "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c", "-o", "/Users/black/dev/recipes/libiconv/check/build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib/compat.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libiconv/check",
+    "file": "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c", "-o", "/Users/black/dev/recipes/libiconv/check/build/debug/obj/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/lib/localcharset.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/recipes/libiconv/check",
+    "file": "src/main.c",
+    "output": "build/debug/obj/src/main.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/dev/recipes/libiconv/check/src/main.c", "-o", "/Users/black/dev/recipes/libiconv/check/build/debug/obj/src/main.c.o", "-O0", "-g", "-DMOLTO_PKG_NAME=\"libiconv_check\"", "-DMOLTO_PKG_VERSION=\"0.1.0\"", "-I/Users/black/dev/recipes/libiconv/check/src", "-I/Users/black/.cache/molto/sources/libiconv/88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6/any/include", "-std=c17"]
+  }
+]

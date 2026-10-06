@@ -2,8 +2,4 @@ graphify-out/
 */build/
 */.bin/
 */compile_commands.json
-.recipes/*/check/build/
-.recipes/*/check/.bin/
-.recipes/*/check/compile_commands.json
-.recipes/*/check/Molto.lock
 .DS_Store
