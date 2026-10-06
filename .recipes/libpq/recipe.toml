@@ -96,15 +96,24 @@ sources = ["src/port/explicit_bzero.c"]
 defines = ["_REENTRANT", "_THREAD_SAFE"]
 flags = ["-pthread"]
 
+# What libpq reaches through win32_port.h's macros (stat, open, setlocale,
+# gai_strerror), and what mingw-w64's C library does not have.
 [artifacts.windows]
 sources = [
   "src/interfaces/libpq/pthread-win32.c", "src/interfaces/libpq/win32.c",
-  "src/port/explicit_bzero.c",
+  "src/port/explicit_bzero.c", "src/port/open.c", "src/port/win32common.c",
+  "src/port/win32error.c", "src/port/win32gai_strerror.c", "src/port/win32ntdll.c",
+  "src/port/win32setlocale.c", "src/port/win32stat.c", "src/port/strlcpy.c",
+  "src/port/strlcat.c", "src/port/strsep.c", "src/port/timingsafe_bcmp.c",
+  "src/port/inet_aton.c",
 ]
 link = ["ws2_32", "secur32"]
 
+# PostgreSQL's win32 template: _POSIX_C_SOURCE is what makes MinGW's time.h
+# declare localtime_r.
 [artifacts.private.windows]
 include = ["src/include/port/win32"]
+defines = ["_POSIX_C_SOURCE"]
 
 [deps]
 openssl = "3.0.13"
