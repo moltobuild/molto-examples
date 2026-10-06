@@ -106,7 +106,7 @@ sources = [
   "src/port/win32setlocale.c", "src/port/win32stat.c", "src/port/strlcpy.c",
   "src/port/strlcat.c", "src/port/strsep.c", "src/port/timingsafe_bcmp.c",
   "src/port/inet_aton.c", "src/port/system.c", "src/port/dirmod.c",
-  "src/port/getpeereid.c",
+  "src/port/getpeereid.c", "src/port/pgsleep.c",
 ]
 link = ["ws2_32", "secur32"]
 
