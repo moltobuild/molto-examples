@@ -21,7 +21,7 @@ args = ["--disable-nls", "--disable-shared", "--enable-static"]
 type = "source"
 std = "c99"
 sources = ["lib/iconv.c", "lib/compat.c", "libcharset/lib/localcharset.c"]
-include = ["include"]
+include = ["include", "libcharset/include"]
 
 [artifacts.private]
 # lib first: localcharset.c is compiled as part of libiconv, against its config.h.

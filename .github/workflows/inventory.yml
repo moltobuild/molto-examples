@@ -61,8 +61,10 @@ jobs:
       - name: Build molto
         run: make -C .molto build CC=gcc
       - name: The recipes' checks
+        timeout-minutes: 25
         run: ./.github/run-checks.sh "$GITHUB_WORKSPACE/.molto/build/molto"
       - name: inventory
+        timeout-minutes: 10
         run: ./.github/run-inventory.sh "$GITHUB_WORKSPACE/.molto/build/molto"
 
   macos:
@@ -87,8 +89,10 @@ jobs:
       - name: Build molto
         run: make -C .molto build CC=clang
       - name: The recipes' checks
+        timeout-minutes: 25
         run: ./.github/run-checks.sh "$GITHUB_WORKSPACE/.molto/build/molto"
       - name: inventory
+        timeout-minutes: 10
         run: ./.github/run-inventory.sh "$GITHUB_WORKSPACE/.molto/build/molto"
 
   windows:
@@ -126,8 +130,10 @@ jobs:
         shell: msys2 {0}
         run: make -C .molto build CC=gcc
       - name: The recipes' checks
+        timeout-minutes: 25
         shell: msys2 {0}
         run: ./.github/run-checks.sh "$PWD/.molto/build/molto.exe"
       - name: inventory
+        timeout-minutes: 10
         shell: msys2 {0}
         run: ./.github/run-inventory.sh "$PWD/.molto/build/molto.exe"
