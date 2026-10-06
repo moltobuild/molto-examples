@@ -9,6 +9,7 @@ of its own: a `Project.toml`, its sources, its tests, and nothing else to set up
 | [`wordcount`](wordcount/) | A `wc` clone: a C23 executable, `[target].requires` answered by pickup, tests that bring their own `main()` |
 | [`calculator`](calculator/) | A GTK 4 desktop app: a dependency from the registry that downloads each platform's own GTK, and a moltest suite |
 | [`todo`](todo/) | Two registry dependencies at once — GTK as a platform recipe, SQLite as a source recipe — and a store tested against a real database |
+| [`inventory`](inventory/) | PostgreSQL and XML: libpq, libxml2 and libiconv compiled from their official tarballs, each configured by its own `configure`, on Linux, macOS and Windows |
 
 ## Running one
 
@@ -93,3 +94,20 @@ molto run
 Start one with `molto new --bin <name>` (or `--lib` for a library tested with
 moltest), keep it small enough to read in one sitting, and give it a line in the
 table above saying what it shows that the others do not.
+
+### inventory
+
+Keeps a small inventory in PostgreSQL and exports it as XML:
+
+```sh
+molto run -- "host=localhost user=postgres"
+```
+
+- **Five libraries, one manifest line each.** `libpq` brings OpenSSL;
+  `libxml2` brings zlib and GNU libiconv. molto resolves the graph.
+- **Compiled from upstream's tarballs.** libpq, libxml2 and libiconv are
+  recipes that name their release tarball and how to configure it; molto runs
+  each one's own `configure` once on the machine (MSYS2's `sh` on Windows) and
+  compiles the library itself. Nothing derived from them is hosted anywhere.
+- **The same on every platform.** `.github/workflows/inventory.yml` runs it
+  against PostgreSQL 18 on Ubuntu, Fedora, Arch, macOS and Windows.

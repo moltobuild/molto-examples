@@ -1,0 +1,35 @@
+schema = 4
+form = "source"
+kind = "package"
+name = "libiconv"
+version = "1.19.0"
+target = "any"
+
+[source]
+archive = "https://mirrors.kernel.org/gnu/libiconv/libiconv-1.19.tar.gz"
+sha256 = "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6"
+strip_prefix = "libiconv-1.19"
+
+# Upstream's configure writes lib/config.h, include/iconv.h and
+# libcharset/include/localcharset.h; molto compiles the library itself.
+[build]
+system = "autotools"
+via = "delegate"
+args = ["--disable-nls", "--disable-shared", "--enable-static"]
+
+[artifacts]
+type = "source"
+std = "c99"
+sources = ["lib/iconv.c", "lib/compat.c", "libcharset/lib/localcharset.c"]
+include = ["include"]
+
+[artifacts.private]
+# lib first: localcharset.c is compiled as part of libiconv, against its config.h.
+include = ["lib", "libcharset/include"]
+defines = ["BUILDING_LIBICONV", "BUILDING_LIBCHARSET", "HAVE_CONFIG_H", "LIBDIR=\"/usr/local/lib\""]
+flags = ["-Wno-parentheses-equality"]
+
+[about]
+description = "GNU libiconv: character set conversion, the same converters on every platform"
+license = "LGPL-2.1-or-later"
+homepage = "https://www.gnu.org/software/libiconv/"

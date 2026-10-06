@@ -1,0 +1,133 @@
+name: inventory
+
+# The inventory example against a real PostgreSQL 18 on every platform molto
+# supports: libpq, libxml2 and libiconv compiled from their official tarballs,
+# each configured by its own configure, plus zlib and OpenSSL from the
+# registry. The recipes' own checks run first, so a red job says which library
+# broke before it says the example did.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # The molto that runs a dependency's configure; a release once
+  # moltobuild/molto#110 is in one.
+  MOLTO_REF: feat/configure-delegate
+
+jobs:
+  linux:
+    name: ${{ matrix.image }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    container: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: ["ubuntu:24.04", "ubuntu:26.04", "fedora:44", "archlinux:latest"]
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: molto
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      C_COMPILER: gcc
+      CONNINFO: "host=postgres user=postgres password=molto dbname=postgres connect_timeout=10"
+    steps:
+      - name: Tools
+        run: |
+          if command -v apt-get >/dev/null; then
+            apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -o Acquire::Retries=3 \
+              gcc make git curl ca-certificates tar xz-utils bzip2 zstd unzip
+          elif command -v dnf >/dev/null; then
+            dnf install -y gcc make git curl tar xz bzip2 zstd unzip findutils diffutils
+          else
+            pacman -Syu --noconfirm gcc make git curl tar xz bzip2 zstd unzip diffutils
+          fi
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=gcc
+      - name: The recipes' checks
+        run: ./.github/run-checks.sh "$GITHUB_WORKSPACE/.molto/build/molto"
+      - name: inventory
+        run: ./.github/run-inventory.sh "$GITHUB_WORKSPACE/.molto/build/molto"
+
+  macos:
+    name: macOS arm64
+    runs-on: macos-15
+    timeout-minutes: 40
+    env:
+      C_COMPILER: clang
+      CONNINFO: "host=localhost dbname=postgres connect_timeout=10"
+    steps:
+      - name: PostgreSQL 18
+        run: |
+          brew install postgresql@18
+          brew services start postgresql@18
+          for i in $(seq 1 30); do "$(brew --prefix postgresql@18)/bin/pg_isready" -h localhost && break; sleep 2; done
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=clang
+      - name: The recipes' checks
+        run: ./.github/run-checks.sh "$GITHUB_WORKSPACE/.molto/build/molto"
+      - name: inventory
+        run: ./.github/run-inventory.sh "$GITHUB_WORKSPACE/.molto/build/molto"
+
+  windows:
+    name: Windows (MinGW-w64, MSYS2)
+    runs-on: windows-2022
+    timeout-minutes: 50
+    env:
+      C_COMPILER: gcc
+      CONNINFO: "host=localhost user=postgres password=root dbname=postgres connect_timeout=10"
+    steps:
+      # The runner image ships PostgreSQL with its service disabled.
+      - name: PostgreSQL
+        shell: pwsh
+        run: |
+          $service = Get-Service -Name 'postgresql*' | Select-Object -First 1
+          Set-Service -Name $service.Name -StartupType Manual
+          Start-Service -Name $service.Name
+          & "$env:PGBIN\pg_isready.exe" -h localhost
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            git
+            make
+            unzip
+            mingw-w64-x86_64-gcc
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        shell: msys2 {0}
+        run: make -C .molto build CC=gcc
+      - name: The recipes' checks
+        shell: msys2 {0}
+        run: ./.github/run-checks.sh "$PWD/.molto/build/molto.exe"
+      - name: inventory
+        shell: msys2 {0}
+        run: ./.github/run-inventory.sh "$PWD/.molto/build/molto.exe"

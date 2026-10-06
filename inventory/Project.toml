@@ -1,0 +1,23 @@
+[package]
+name = "inventory"
+version = "0.1.0"
+artifact = "executable"
+description = "Keeps an inventory in PostgreSQL and exports it as XML"
+
+[target]
+std = "c17"
+flags = ["-Wall", "-Wextra"]
+
+[profile.debug]
+opt_level = 0
+debug_info = true
+
+[profile.release]
+opt_level = 3
+debug_info = false
+
+# Until the recipes are published, the copies under .recipes/; afterwards
+# libpq = "18.6.0" and libxml2 = "2.15.4".
+[deps]
+libpq = { path = "../.recipes/libpq" }
+libxml2 = { path = "../.recipes/libxml2" }

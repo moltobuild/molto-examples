@@ -1,0 +1,110 @@
+schema = 4
+form = "source"
+kind = "package"
+name = "libpq"
+version = "18.6.0"
+target = "any"
+
+[source]
+archive = "https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2"
+sha256 = "555610c24d53e4316da5b7d3fc25c279d96856d5e0e23ee308c328c5fa881d9f"
+strip_prefix = "postgresql-18.6"
+
+# Upstream's configure writes src/include/pg_config.h and pg_config_os.h, and
+# a Makefile rule writes src/port/pg_config_paths.h. It runs without
+# --with-ssl, since molto compiles OpenSSL's consumer rather than configure
+# linking against it, and the TLS macros it would have defined are below: every
+# one is what OpenSSL 3.0, the version this recipe depends on, provides.
+[build]
+system = "autotools"
+via = "delegate"
+args = [
+  "--without-icu", "--without-readline", "--without-zlib", "--without-zstd",
+  "--without-lz4", "--without-gssapi", "--without-ldap",
+]
+targets = ["src/port/pg_config_paths.h"]
+
+# libpq's interface and nothing else of PostgreSQL's on a consumer's include
+# path: its three public headers, copied beside each other.
+[[provide]]
+file = "molto/include/libpq-fe.h"
+from = "src/interfaces/libpq/libpq-fe.h"
+
+[[provide]]
+file = "molto/include/libpq-events.h"
+from = "src/interfaces/libpq/libpq-events.h"
+
+[[provide]]
+file = "molto/include/postgres_ext.h"
+from = "src/include/postgres_ext.h"
+
+# libpq, and the objects of src/common and src/port it links, measured with
+# PostgreSQL's own build (README.md). Platform-only ones are added per OS.
+[artifacts]
+type = "source"
+std = "c11"
+sources = [
+  "src/interfaces/libpq/fe-auth-oauth.c", "src/interfaces/libpq/fe-auth-scram.c",
+  "src/interfaces/libpq/fe-auth.c", "src/interfaces/libpq/fe-cancel.c",
+  "src/interfaces/libpq/fe-connect.c", "src/interfaces/libpq/fe-exec.c",
+  "src/interfaces/libpq/fe-lobj.c", "src/interfaces/libpq/fe-misc.c",
+  "src/interfaces/libpq/fe-print.c", "src/interfaces/libpq/fe-protocol3.c",
+  "src/interfaces/libpq/fe-secure-common.c", "src/interfaces/libpq/fe-secure-openssl.c",
+  "src/interfaces/libpq/fe-secure.c", "src/interfaces/libpq/fe-trace.c",
+  "src/interfaces/libpq/legacy-pqsignal.c", "src/interfaces/libpq/libpq-events.c",
+  "src/interfaces/libpq/pqexpbuffer.c",
+  "src/common/base64.c", "src/common/cryptohash_openssl.c", "src/common/encnames.c",
+  "src/common/hmac_openssl.c", "src/common/ip.c", "src/common/jsonapi.c",
+  "src/common/link-canary.c", "src/common/md5_common.c", "src/common/pg_prng.c",
+  "src/common/saslprep.c", "src/common/scram-common.c", "src/common/string.c",
+  "src/common/unicode_norm.c", "src/common/wchar.c",
+  "src/port/chklocale.c", "src/port/inet_net_ntop.c", "src/port/noblock.c",
+  "src/port/pg_strong_random.c", "src/port/pgstrcasecmp.c", "src/port/snprintf.c",
+  "src/port/strerror.c",
+]
+include = ["molto/include"]
+
+[artifacts.private]
+include = ["src/include", "src/interfaces/libpq", "src/port", "src/common"]
+defines = [
+  "FRONTEND", "JSONAPI_USE_PQEXPBUFFER", "SO_MAJOR_VERSION=5",
+  "USE_OPENSSL=1", "OPENSSL_API_COMPAT=0x10101000L", "HAVE_SSL_CTX_SET_CERT_CB=1",
+  "HAVE_SSL_CTX_SET_CIPHERSUITES=1", "HAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1",
+  "HAVE_SSL_CTX_SET_NUM_TICKETS=1", "HAVE_X509_GET_SIGNATURE_INFO=1",
+]
+flags = ["-fno-strict-aliasing", "-fwrapv"]
+
+# glibc has no getpeereid or timingsafe_bcmp.
+[artifacts.linux]
+sources = ["src/port/getpeereid.c", "src/port/timingsafe_bcmp.c"]
+link = ["pthread"]
+
+[artifacts.private.linux]
+defines = ["_REENTRANT", "_GNU_SOURCE"]
+flags = ["-pthread"]
+
+# macOS has no explicit_bzero.
+[artifacts.macos]
+sources = ["src/port/explicit_bzero.c"]
+
+[artifacts.private.macos]
+defines = ["_REENTRANT", "_THREAD_SAFE"]
+flags = ["-pthread"]
+
+[artifacts.windows]
+sources = [
+  "src/interfaces/libpq/pthread-win32.c", "src/interfaces/libpq/win32.c",
+  "src/port/explicit_bzero.c",
+]
+link = ["ws2_32", "secur32"]
+
+[artifacts.private.windows]
+include = ["src/include/port/win32"]
+
+[deps]
+openssl = "3.0.13"
+
+[about]
+description = "PostgreSQL 18.6's client library, with TLS through OpenSSL"
+license = "PostgreSQL"
+homepage = "https://www.postgresql.org/docs/18/libpq.html"
