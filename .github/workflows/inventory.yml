@@ -17,9 +17,9 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # The molto that runs a dependency's configure; a release once
-  # moltobuild/molto#110 is in one.
-  MOLTO_REF: feat/configure-delegate
+  # molto 0.56 runs a dependency's configure; moltobuild/molto#111 adds .tar.xz
+  # on Windows. A release once that is in one.
+  MOLTO_REF: fix/windows-xz-provide-dirs
 
 jobs:
   linux:
