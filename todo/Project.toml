@@ -1,0 +1,38 @@
+[package]
+name = "todo"
+version = "0.1.0"
+artifact = "executable"   # executable | static | shared
+description = "A to-do list with a GTK 4 window and an SQLite database"
+# license = "MIT"       # an SPDX expression: MIT OR Apache-2.0
+# homepage = ""
+# repository = ""
+# authors = []
+
+[target]
+std = "c17"            # C standard passed as -std=
+include = ["include"]  # -Iinclude: the project's own headers
+# compiler = "gcc"     # gcc | clang | msvc; absent = autodetect
+# cpp_std = "c++17"    # C++ standard for C++ translation units
+# link = ["m"]         # system libraries: -lm
+# defines = []         # -D...
+flags = ["-Wall", "-Wextra"]
+
+[test]
+# moltest registers the tests and owns main(); the suite links everything in
+# src/ except src/main.c, which is the window.
+mode = "single"
+
+[dev-deps]
+moltest = { git = "https://github.com/moltobuild/moltest", tag = "v0.3.0" }
+
+[profile.debug]
+opt_level = 0
+debug_info = true
+
+[profile.release]
+opt_level = 3
+debug_info = false
+
+[deps]
+gtk = "4.14.0"
+sqlite = "3.53.4"

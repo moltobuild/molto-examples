@@ -8,6 +8,7 @@ of its own: a `Project.toml`, its sources, its tests, and nothing else to set up
 |---|---|
 | [`wordcount`](wordcount/) | A `wc` clone: a C23 executable, `[target].requires` answered by pickup, tests that bring their own `main()` |
 | [`calculator`](calculator/) | A GTK 4 desktop app: a dependency from the registry that downloads each platform's own GTK, and a moltest suite |
+| [`todo`](todo/) | Two registry dependencies at once — GTK as a platform recipe, SQLite as a source recipe — and a store tested against a real database |
 
 ## Running one
 
@@ -64,6 +65,26 @@ A calculator with a GTK 4 window: precedence (`2+3×4` is 14), parentheses,
 
 ```sh
 cd calculator
+molto run
+```
+
+### todo
+
+A to-do list: add, tick off, edit, delete and filter tasks, saved in SQLite as
+you go.
+
+- **Two kinds of dependency side by side.** `gtk` is a platform recipe, fetched
+  as each platform's own packages; `sqlite` is a source recipe, SQLite's
+  amalgamation compiled into the build with the defines its recipe pins
+  (`SQLITE_THREADSAFE=1`, FTS5, R-Tree).
+- **The store knows nothing of the window.** `src/store.c` is the database —
+  a versioned schema, bound parameters, one statement per change — and its tests
+  open it in memory and on disk.
+- **The window redraws from the store** after every change, so it never shows a
+  task the database does not have.
+
+```sh
+cd todo
 molto run
 ```
 
