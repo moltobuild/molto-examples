@@ -1,0 +1,53 @@
+name: diag-windows
+
+# Temporary: finds what a native program like molto runs on a Windows runner
+# for tar, git and curl, and whether each finishes on what libxml2 and zlib
+# need. Deleted once the inventory job is green.
+
+on:
+  push:
+    branches: [feat/inventory]
+  workflow_dispatch:
+
+jobs:
+  diag:
+    runs-on: windows-2022
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            git
+            make
+            unzip
+            mingw-w64-x86_64-gcc
+      - name: What CreateProcess finds
+        shell: cmd
+        run: |
+          where tar
+          where git
+          where curl
+          where sh
+      - name: Download libxml2
+        run: |
+          curl -fsSL -o /c/t.tar.xz https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.4.tar.xz
+          ls -la /c/t.tar.xz
+      - name: System32 tar on .tar.xz
+        timeout-minutes: 3
+        shell: cmd
+        run: |
+          mkdir C:\x1
+          C:\Windows\System32\tar.exe -xf C:/t.tar.xz -C C:/x1
+          dir C:\x1
+      - name: git clone zlib (what a native program finds)
+        timeout-minutes: 3
+        shell: cmd
+        run: |
+          git --version
+          git -c credential.helper= clone --quiet https://github.com/madler/zlib C:\z
+          dir C:\z
