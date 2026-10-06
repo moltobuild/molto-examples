@@ -1,0 +1,9 @@
+# Build output
+/build/
+
+# Workspace database (molto-owned metadata)
+/.bin/
+
+# What every build tells clangd and clang-tidy about
+# this project: derived from Project.toml and the tree
+/compile_commands.json
