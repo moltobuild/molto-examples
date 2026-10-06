@@ -78,10 +78,11 @@ defines = [
 ]
 flags = ["-fno-strict-aliasing", "-fwrapv"]
 
-# glibc has no getpeereid or timingsafe_bcmp.
+# glibc has no getpeereid or timingsafe_bcmp, and keeps log, sqrt and sin
+# (pg_prng.c) in libm.
 [artifacts.linux]
 sources = ["src/port/getpeereid.c", "src/port/timingsafe_bcmp.c"]
-link = ["pthread"]
+link = ["pthread", "m"]
 
 [artifacts.private.linux]
 defines = ["_REENTRANT", "_GNU_SOURCE"]
