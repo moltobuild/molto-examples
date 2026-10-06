@@ -23,6 +23,10 @@ args = [
   "--without-lz4", "--without-gssapi", "--without-ldap",
 ]
 targets = ["src/port/pg_config_paths.h"]
+# configure insists bison and flex exist and asks their versions, for the
+# server's grammar; libpq runs neither, so it is told rather than made to
+# need them installed.
+env = { BISON = "echo bison (GNU Bison) 3.8", FLEX = "echo flex 2.6.4" }
 
 # libpq's interface and nothing else of PostgreSQL's on a consumer's include
 # path: its three public headers, copied beside each other.
