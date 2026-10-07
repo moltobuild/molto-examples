@@ -69,6 +69,14 @@ jobs:
       - name: libwebsockets
         timeout-minutes: 25
         run: cd .recipes/libwebsockets/check && "$GITHUB_WORKSPACE/.molto/build/molto" run
+      - name: What the configuration saw
+        if: failure()
+        run: |
+          src=$(ls -d "$HOME"/.cache/molto/sources/libwebsockets/*/any | head -1)
+          grep -nE 'OPENSSL|LWS_HAVE_EVP_MD_CTX_free|LWS_HAVE_SSL_CTX_get0' "$src/.molto-cmake/lws_config.h" | head -20
+          grep -nE 'OPENSSL_(SSL|CRYPTO)_LIBRARY|OPENSSL_INCLUDE_DIR' "$src/.molto-cmake/CMakeCache.txt"
+          ls -la "$HOME"/.cache/molto/platforms/openssl/*/*/usr/lib/*/ 2>/dev/null | head -20
+          awk '/EVP_MD_CTX_free/{f=1} f{print; if (++n > 60) exit}' "$src/.molto-cmake/CMakeFiles/CMakeConfigureLog.yaml"
 
   macos:
     name: macOS arm64
