@@ -87,6 +87,8 @@ flags = ["-Wno-deprecated-declarations"]
 
 [artifacts.linux]
 sources = [
+  # Linux monitors its routing table over netlink, as upstream configures it there.
+  "lib/roles/netlink/ops-netlink.c", "lib/core-net/route.c",
   "lib/plat/unix/unix-caps.c", "lib/plat/unix/unix-fds.c", "lib/plat/unix/unix-file.c",
   "lib/plat/unix/unix-init.c", "lib/plat/unix/unix-misc.c", "lib/plat/unix/unix-pipe.c",
   "lib/plat/unix/unix-service.c", "lib/plat/unix/unix-sockets.c", "lib/plat/unix/unix-spawn.c",
