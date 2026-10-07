@@ -125,7 +125,7 @@ sources = [
   "lib/plat/windows/windows-service.c", "lib/plat/windows/windows-sockets.c",
   
 ]
-link = ["ws2_32", "userenv", "psapi", "iphlpapi", "crypt32"]
+link = ["ws2_32", "userenv", "psapi", "iphlpapi", "crypt32", "pthread"]
 # libwebsockets, its public headers included, tests WIN32, which a compiler in
 # strict ISO mode does not predefine: without it the library takes its Unix
 # branches (int sockets, no SOCKET) and a consumer sees other types than it.
@@ -133,6 +133,9 @@ defines = ["WIN32"]
 
 [artifacts.private.windows]
 include = ["lib/plat/windows", "win32port/win32helpers"]
+# CMake finds MinGW's pthread.h and txpacer.c uses it, but on Windows only the
+# system message distribution left out above would have included it.
+flags = ["-includepthread.h"]
 
 [deps]
 openssl = "3.0.13"
