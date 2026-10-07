@@ -17,7 +17,9 @@ concurrency:
 
 env:
   MOLTO_REF: feat/cmake-delegate
-  PICKUP_VERSION: "0.13.0"
+  # pickup with moltobuild/pickup#29 (it finds an installed Ninja); a release
+  # once that is in one.
+  PICKUP_REF: fix/tools-at-the-top
 
 jobs:
   linux:
@@ -43,13 +45,19 @@ jobs:
             pacman -Syu --noconfirm gcc make git curl tar xz bzip2 zstd unzip diffutils
           fi
       - uses: actions/checkout@v4
-      - name: pickup, and CMake and Ninja through it
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/pickup
+          ref: ${{ env.PICKUP_REF }}
+          path: .pickup
+      # What the machine already has is used as it is: pickup installs CMake
+      # or Ninja only where there is none.
+      - name: pickup, and CMake and Ninja where the system has none
         run: |
-          curl -fsSL -o /usr/local/bin/pickup \
-            "https://github.com/moltobuild/pickup/releases/download/v$PICKUP_VERSION/pickup-$PICKUP_VERSION-x86_64-linux"
-          chmod +x /usr/local/bin/pickup
-          pickup install cmake
-          pickup install ninja
+          make -C .pickup build CC=gcc
+          install .pickup/build/pickup /usr/local/bin/pickup
+          command -v cmake >/dev/null || pickup install cmake
+          command -v ninja >/dev/null || pickup install ninja
           pickup tools
       - uses: actions/checkout@v4
         with:
@@ -70,15 +78,21 @@ jobs:
       C_COMPILER: clang
     steps:
       - uses: actions/checkout@v4
-      - name: pickup, and CMake and Ninja through it
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/pickup
+          ref: ${{ env.PICKUP_REF }}
+          path: .pickup
+      # The runner image has CMake and Ninja of its own: they are what is used,
+      # and nothing is installed.
+      - name: pickup, and CMake and Ninja where the system has none
         run: |
-          mkdir -p "$HOME/bin"
-          curl -fsSL -o "$HOME/bin/pickup" \
-            "https://github.com/moltobuild/pickup/releases/download/v$PICKUP_VERSION/pickup-$PICKUP_VERSION-arm64-macos"
-          chmod +x "$HOME/bin/pickup"
+          make -C .pickup build CC=clang
+          mkdir -p "$HOME/bin" && cp .pickup/build/pickup "$HOME/bin/pickup"
           echo "$HOME/bin" >> "$GITHUB_PATH"
-          "$HOME/bin/pickup" install cmake
-          "$HOME/bin/pickup" install ninja
+          command -v cmake >/dev/null || "$HOME/bin/pickup" install cmake
+          command -v ninja >/dev/null || "$HOME/bin/pickup" install ninja
+          "$HOME/bin/pickup" tools
       - uses: actions/checkout@v4
         with:
           repository: moltobuild/molto
@@ -110,13 +124,18 @@ jobs:
             unzip
             mingw-w64-x86_64-gcc
       - uses: actions/checkout@v4
-      - name: pickup, and CMake and Ninja through it
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/pickup
+          ref: ${{ env.PICKUP_REF }}
+          path: .pickup
+      - name: pickup, and CMake and Ninja where the system has none
         run: |
-          mkdir -p "$HOME/bin"
-          curl -fsSL -o "$HOME/bin/pickup.exe" \
-            "https://github.com/moltobuild/pickup/releases/download/v$PICKUP_VERSION/pickup-$PICKUP_VERSION-x86_64-windows.exe"
-          "$HOME/bin/pickup.exe" install cmake
-          "$HOME/bin/pickup.exe" install ninja
+          make -C .pickup build CC=gcc
+          mkdir -p "$HOME/bin" && cp .pickup/build/pickup.exe "$HOME/bin/pickup.exe"
+          command -v cmake >/dev/null || "$HOME/bin/pickup.exe" install cmake
+          command -v ninja >/dev/null || "$HOME/bin/pickup.exe" install ninja
+          "$HOME/bin/pickup.exe" tools
       - uses: actions/checkout@v4
         with:
           repository: moltobuild/molto
