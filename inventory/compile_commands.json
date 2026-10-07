@@ -1,0 +1,572 @@
+[
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/iconv.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/iconv.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/iconv.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/iconv.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/compat.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/compat.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/compat.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib/compat.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/lib/localcharset.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/lib/localcharset.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/lib/localcharset.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/lib/localcharset.c.o", "-O0", "-g", "-DBUILDING_LIBICONV", "-DBUILDING_LIBCHARSET", "-DHAVE_CONFIG_H", "-DLIBDIR=\"/usr/local/lib\"", "-Wno-parentheses-equality", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/lib", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-std=c99"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-oauth.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-oauth.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-oauth.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-oauth.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-scram.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-scram.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-scram.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth-scram.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-auth.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-cancel.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-cancel.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-cancel.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-cancel.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-connect.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-connect.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-connect.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-connect.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-exec.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-exec.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-exec.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-exec.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-lobj.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-lobj.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-lobj.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-lobj.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-misc.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-misc.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-misc.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-misc.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-print.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-print.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-print.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-print.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-protocol3.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-protocol3.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-protocol3.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-protocol3.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-common.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-common.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-common.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-common.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-openssl.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-openssl.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-openssl.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure-openssl.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-secure.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-trace.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-trace.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-trace.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/fe-trace.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/legacy-pqsignal.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/legacy-pqsignal.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/legacy-pqsignal.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/legacy-pqsignal.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/libpq-events.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/libpq-events.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/libpq-events.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/libpq-events.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/pqexpbuffer.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/pqexpbuffer.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/pqexpbuffer.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq/pqexpbuffer.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/base64.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/base64.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/base64.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/base64.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/cryptohash_openssl.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/cryptohash_openssl.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/cryptohash_openssl.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/cryptohash_openssl.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/encnames.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/encnames.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/encnames.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/encnames.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/hmac_openssl.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/hmac_openssl.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/hmac_openssl.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/hmac_openssl.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/ip.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/ip.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/ip.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/ip.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/jsonapi.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/jsonapi.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/jsonapi.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/jsonapi.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/link-canary.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/link-canary.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/link-canary.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/link-canary.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/md5_common.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/md5_common.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/md5_common.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/md5_common.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/pg_prng.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/pg_prng.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/pg_prng.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/pg_prng.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/saslprep.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/saslprep.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/saslprep.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/saslprep.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/scram-common.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/scram-common.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/scram-common.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/scram-common.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/string.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/string.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/string.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/string.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/unicode_norm.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/unicode_norm.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/unicode_norm.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/unicode_norm.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/wchar.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/wchar.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/wchar.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common/wchar.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/chklocale.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/chklocale.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/chklocale.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/chklocale.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/inet_net_ntop.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/inet_net_ntop.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/inet_net_ntop.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/inet_net_ntop.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/noblock.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/noblock.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/noblock.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/noblock.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pg_strong_random.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pg_strong_random.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pg_strong_random.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pg_strong_random.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pgstrcasecmp.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pgstrcasecmp.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pgstrcasecmp.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/pgstrcasecmp.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/snprintf.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/snprintf.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/snprintf.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/snprintf.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/strerror.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/strerror.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/strerror.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/strerror.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/explicit_bzero.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/explicit_bzero.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/explicit_bzero.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port/explicit_bzero.c.o", "-O0", "-g", "-DFRONTEND", "-DJSONAPI_USE_PQEXPBUFFER", "-DSO_MAJOR_VERSION=5", "-DUSE_OPENSSL=1", "-DOPENSSL_API_COMPAT=0x10101000L", "-DHAVE_SSL_CTX_SET_CERT_CB=1", "-DHAVE_SSL_CTX_SET_CIPHERSUITES=1", "-DHAVE_SSL_CTX_SET_KEYLOG_CALLBACK=1", "-DHAVE_SSL_CTX_SET_NUM_TICKETS=1", "-DHAVE_X509_GET_SIGNATURE_INFO=1", "-D_REENTRANT", "-D_THREAD_SAFE", "-fno-strict-aliasing", "-fwrapv", "-pthread", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/interfaces/libpq", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/port", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/src/common", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/buf.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/buf.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/buf.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/buf.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/chvalid.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/chvalid.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/chvalid.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/chvalid.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/dict.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/dict.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/dict.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/dict.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/encoding.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/encoding.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/encoding.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/encoding.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/entities.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/entities.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/entities.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/entities.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/error.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/error.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/error.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/error.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/globals.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/globals.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/globals.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/globals.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/hash.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/hash.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/hash.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/hash.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/list.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/list.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/list.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/list.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parser.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parser.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parser.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parser.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parserInternals.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parserInternals.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parserInternals.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/parserInternals.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/SAX2.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/SAX2.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/SAX2.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/SAX2.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/threads.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/threads.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/threads.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/threads.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/tree.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/tree.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/tree.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/tree.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/uri.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/uri.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/uri.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/uri.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/valid.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/valid.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/valid.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/valid.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlIO.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlIO.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlIO.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlIO.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmemory.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmemory.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmemory.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmemory.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlstring.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlstring.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlstring.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlstring.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/c14n.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/c14n.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/c14n.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/c14n.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/catalog.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/catalog.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/catalog.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/catalog.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/debugXML.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/debugXML.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/debugXML.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/debugXML.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLparser.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLparser.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLparser.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLparser.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLtree.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLtree.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLtree.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/HTMLtree.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmodule.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmodule.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmodule.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlmodule.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlsave.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlsave.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlsave.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlsave.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/pattern.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/pattern.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/pattern.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/pattern.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlreader.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlreader.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlreader.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlreader.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlregexp.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlregexp.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlregexp.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlregexp.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/relaxng.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/relaxng.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/relaxng.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/relaxng.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemas.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemas.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemas.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemas.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemastypes.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemastypes.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemastypes.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlschemastypes.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlwriter.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlwriter.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlwriter.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xmlwriter.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xinclude.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xinclude.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xinclude.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xinclude.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpath.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpath.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpath.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpath.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xlink.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xlink.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xlink.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xlink.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpointer.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpointer.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpointer.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/libxml2/2.15.4/any/xpointer.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/.", "-std=c11"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/adler32.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/compress.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/crc32.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/deflate.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzclose.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzlib.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzread.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/gzwrite.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/infback.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inffast.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inflate.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/inftrees.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/trees.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/uncompr.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c",
+    "output": "build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/Users/black/.cache/molto/sources/zlib/1.3.1/any/zutil.c.o", "-O0", "-g", "-D_LARGEFILE64_SOURCE", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  },
+  {
+    "directory": "/Users/black/dev/molto-examples/inventory",
+    "file": "src/main.c",
+    "output": "build/debug/obj/src/main.c.o",
+    "arguments": ["/usr/bin/gcc", "-c", "/Users/black/dev/molto-examples/inventory/src/main.c", "-o", "/Users/black/dev/molto-examples/inventory/build/debug/obj/src/main.c.o", "-O0", "-g", "-DMOLTO_PKG_NAME=\"inventory\"", "-DMOLTO_PKG_VERSION=\"0.1.0\"", "-Wall", "-Wextra", "-DLIBXML_STATIC", "-DLIBXML_ZLIB_ENABLED", "-DLIBXML_ICONV_ENABLED", "-D_LARGEFILE64_SOURCE", "-I/Users/black/dev/molto-examples/inventory/src", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/include", "-I/Users/black/.cache/molto/sources/libiconv/1.19.0/any/libcharset/include", "-I/Users/black/.cache/molto/sources/libpq/18.6.0/any/molto/include", "-I/Users/black/.cache/molto/sources/libxml2/2.15.4/any/include", "-I/Users/black/.cache/molto/platforms/openssl/3.0.13/macos-arm64/include", "-I/Users/black/.cache/molto/sources/zlib/1.3.1/any/.", "-std=c17"]
+  }
+]

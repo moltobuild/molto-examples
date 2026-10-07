@@ -1,1 +1,5 @@
 graphify-out/
+.recipes/*/check/build/
+.recipes/*/check/.bin/
+.recipes/*/check/Molto.lock
+.recipes/*/check/compile_commands.json

@@ -1,0 +1,131 @@
+name: websockets
+
+# libwebsockets from its tag tarball, configured by its own CMake on every
+# platform: pickup installs CMake and Ninja from their upstream releases, molto
+# runs the configuration and compiles the library, OpenSSL comes from the
+# registry. The recipe rides along under .recipes/ until it is published.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  MOLTO_REF: feat/cmake-delegate
+  PICKUP_VERSION: "0.13.0"
+
+jobs:
+  linux:
+    name: ${{ matrix.image }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    container: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: ["ubuntu:24.04", "ubuntu:26.04", "fedora:44", "archlinux:latest"]
+    env:
+      C_COMPILER: gcc
+    steps:
+      - name: Tools
+        run: |
+          if command -v apt-get >/dev/null; then
+            apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -o Acquire::Retries=3 \
+              gcc make git curl ca-certificates tar xz-utils bzip2 zstd unzip
+          elif command -v dnf >/dev/null; then
+            dnf install -y gcc make git curl tar xz bzip2 zstd unzip findutils diffutils
+          else
+            pacman -Syu --noconfirm gcc make git curl tar xz bzip2 zstd unzip diffutils
+          fi
+      - uses: actions/checkout@v4
+      - name: pickup, and CMake and Ninja through it
+        run: |
+          curl -fsSL -o /usr/local/bin/pickup \
+            "https://github.com/moltobuild/pickup/releases/download/v$PICKUP_VERSION/pickup-$PICKUP_VERSION-x86_64-linux"
+          chmod +x /usr/local/bin/pickup
+          pickup install cmake
+          pickup install ninja
+          pickup tools
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=gcc
+      - name: libwebsockets
+        timeout-minutes: 25
+        run: cd .recipes/libwebsockets/check && "$GITHUB_WORKSPACE/.molto/build/molto" run
+
+  macos:
+    name: macOS arm64
+    runs-on: macos-15
+    timeout-minutes: 40
+    env:
+      C_COMPILER: clang
+    steps:
+      - uses: actions/checkout@v4
+      - name: pickup, and CMake and Ninja through it
+        run: |
+          mkdir -p "$HOME/bin"
+          curl -fsSL -o "$HOME/bin/pickup" \
+            "https://github.com/moltobuild/pickup/releases/download/v$PICKUP_VERSION/pickup-$PICKUP_VERSION-arm64-macos"
+          chmod +x "$HOME/bin/pickup"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          "$HOME/bin/pickup" install cmake
+          "$HOME/bin/pickup" install ninja
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=clang
+      - name: libwebsockets
+        timeout-minutes: 25
+        run: cd .recipes/libwebsockets/check && "$GITHUB_WORKSPACE/.molto/build/molto" run
+
+  windows:
+    name: Windows (MinGW-w64, MSYS2)
+    runs-on: windows-2022
+    timeout-minutes: 50
+    env:
+      C_COMPILER: gcc
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            git
+            make
+            unzip
+            mingw-w64-x86_64-gcc
+      - uses: actions/checkout@v4
+      - name: pickup, and CMake and Ninja through it
+        run: |
+          mkdir -p "$HOME/bin"
+          curl -fsSL -o "$HOME/bin/pickup.exe" \
+            "https://github.com/moltobuild/pickup/releases/download/v$PICKUP_VERSION/pickup-$PICKUP_VERSION-x86_64-windows.exe"
+          "$HOME/bin/pickup.exe" install cmake
+          "$HOME/bin/pickup.exe" install ninja
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=gcc
+      - name: libwebsockets
+        timeout-minutes: 30
+        run: |
+          export MOLTO_PICKUP="$HOME/bin/pickup.exe"
+          cd .recipes/libwebsockets/check && "$GITHUB_WORKSPACE/.molto/build/molto.exe" run
