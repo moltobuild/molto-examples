@@ -1,0 +1,10 @@
+[package]
+name = "ffmpeg_check"
+version = "0.1.0"
+artifact = "executable"
+
+[target]
+std = "c17"
+
+[deps]
+ffmpeg = { path = ".." }

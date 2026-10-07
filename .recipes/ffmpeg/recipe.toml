@@ -1,0 +1,72 @@
+schema = 5
+form = "source"
+kind = "package"
+name = "ffmpeg"
+version = "9.0.2"
+target = "any"
+
+[source]
+archive = "https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz"
+sha256 = "8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e"
+strip_prefix = "ffmpeg-9.0.2"
+
+# Every library and every component FFmpeg builds on its own: all its decoders,
+# encoders, formats, filters and protocols, its SIMD assembly (NEON in .S on
+# ARM, NASM on x86) and the platform's hardware video (VideoToolbox on macOS,
+# D3D11VA and DXVA2 on Windows), which configure finds in the system's SDK.
+# What it would find only on some machines of one OS is turned off, so a
+# platform builds the same FFmpeg everywhere: X11, ALSA, SDL, VA-API and VDPAU,
+# Vulkan, CUDA, AMF, V4L2. LGPL: nothing GPL or non-free is enabled.
+[build]
+system = "autotools"
+via = "delegate"
+args = [
+  "--cc={cc}", "--x86asmexe={nasm}", "--prefix=molto", "--enable-pic",
+  "--disable-programs", "--disable-doc", "--disable-debug",
+  "--disable-alsa", "--disable-sndio", "--disable-libxcb", "--disable-xlib", "--disable-sdl2",
+  "--disable-vaapi", "--disable-vdpau", "--disable-libdrm", "--disable-vulkan",
+  "--disable-cuda-llvm", "--disable-ffnvcodec", "--disable-amf", "--disable-v4l2-m2m",
+  "--disable-zlib", "--disable-bzlib", "--disable-lzma", "--disable-iconv",
+]
+# The public headers, with the two configure and make generate, under
+# molto/include, where a consumer's #include <libavcodec/avcodec.h> finds them.
+targets = ["install-headers"]
+# What make compiles into the seven libraries.
+sources = "make"
+goals = [
+  "libavutil/libavutil.a", "libswresample/libswresample.a", "libswscale/libswscale.a",
+  "libavcodec/libavcodec.a", "libavformat/libavformat.a", "libavfilter/libavfilter.a",
+  "libavdevice/libavdevice.a",
+]
+
+[artifacts]
+type = "source"
+include = ["molto/include"]
+link = ["m"]
+# Not part of any library: the program swscale runs to generate its NEON
+# tables, and swscale's copy of avfilter's frame pool, which a program linking
+# every library already has from avfilter.
+exclude = ["libswscale/aarch64/ops_asmgen.c", "libswscale/framepool.c"]
+
+[artifacts.linux]
+link = ["pthread"]
+
+[artifacts.macos]
+link = [
+  "pthread", "AudioToolbox.framework", "AVFoundation.framework", "AppKit.framework",
+  "CoreAudio.framework", "CoreFoundation.framework", "CoreGraphics.framework",
+  "CoreImage.framework", "CoreMedia.framework", "CoreServices.framework",
+  "CoreVideo.framework", "Foundation.framework", "OpenGL.framework", "Security.framework",
+  "VideoToolbox.framework",
+]
+
+[artifacts.windows]
+link = [
+  "bcrypt", "ole32", "user32", "gdi32", "psapi", "shlwapi", "strmiids", "uuid", "oleaut32",
+  "mfuuid", "ws2_32", "secur32", "crypt32", "vfw32",
+]
+
+[about]
+description = "FFmpeg 9.0.2: every codec, format, filter and device it builds on its own, with SIMD and the platform's hardware video"
+license = "LGPL-2.1-or-later"
+homepage = "https://ffmpeg.org"
