@@ -13,11 +13,11 @@ strip_prefix = "ffmpeg-9.0.2"
 # Every library and every component FFmpeg builds on its own: all its decoders,
 # encoders, formats, filters and protocols, its SIMD assembly (NEON in .S on
 # ARM, NASM on x86) and the platform's hardware video (VideoToolbox on macOS,
-# D3D11VA and DXVA2 on Windows), which configure finds in the system's SDK;
-# with Xcode's Metal compiler, macOS also gets its Metal deinterlacer.
+# D3D11VA and DXVA2 on Windows), which configure finds in the system's SDK.
 # What it would find only on some machines of one OS is turned off, so a
 # platform builds the same FFmpeg everywhere: X11, ALSA, SDL, VA-API and VDPAU,
-# Vulkan, CUDA, AMF, V4L2. LGPL: nothing GPL or non-free is enabled.
+# Vulkan, CUDA, AMF, V4L2, and Metal, whose compiler only a full Xcode has.
+# LGPL: nothing GPL or non-free is enabled.
 [build]
 system = "autotools"
 via = "delegate"
@@ -26,7 +26,8 @@ args = [
   "--disable-programs", "--disable-doc", "--disable-debug",
   "--disable-alsa", "--disable-sndio", "--disable-libxcb", "--disable-xlib", "--disable-sdl2",
   "--disable-vaapi", "--disable-vdpau", "--disable-libdrm", "--disable-vulkan",
-  "--disable-cuda-llvm", "--disable-ffnvcodec", "--disable-amf", "--disable-v4l2-m2m",
+  "--disable-metal", "--disable-cuda-llvm", "--disable-ffnvcodec", "--disable-amf",
+  "--disable-v4l2-m2m",
   "--disable-bzlib", "--disable-lzma", "--disable-iconv",
 ]
 # The public headers, with the two configure and make generate, under
@@ -61,7 +62,7 @@ link = [
   "pthread", "AudioToolbox.framework", "AVFoundation.framework", "AppKit.framework",
   "CoreAudio.framework", "CoreFoundation.framework", "CoreGraphics.framework",
   "CoreImage.framework", "CoreMedia.framework", "CoreServices.framework",
-  "CoreVideo.framework", "Foundation.framework", "Metal.framework", "OpenGL.framework",
+  "CoreVideo.framework", "Foundation.framework", "OpenGL.framework",
   "Security.framework", "VideoToolbox.framework",
 ]
 
