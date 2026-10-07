@@ -113,6 +113,8 @@ include = ["lib/plat/unix"]
 
 [artifacts.windows]
 sources = [
+  # The gettimeofday Windows lacks, from upstream's own helpers.
+  "win32port/win32helpers/gettimeofday.c",
   "lib/plat/windows/windows-fds.c", "lib/plat/windows/windows-file.c",
   "lib/plat/windows/windows-init.c", "lib/plat/windows/windows-misc.c",
   "lib/plat/windows/windows-pipe.c", "lib/plat/windows/windows-plugins.c",
@@ -122,7 +124,7 @@ sources = [
 link = ["ws2_32", "userenv", "psapi", "iphlpapi", "crypt32"]
 
 [artifacts.private.windows]
-include = ["lib/plat/windows"]
+include = ["lib/plat/windows", "win32port/win32helpers"]
 
 [deps]
 openssl = "3.0.13"
