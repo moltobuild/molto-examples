@@ -92,10 +92,12 @@ sources = [
   "lib/plat/unix/unix-service.c", "lib/plat/unix/unix-sockets.c", "lib/plat/unix/unix-spawn.c",
 ]
 link = ["pthread"]
+# libwebsockets.h names siginfo_t, which glibc declares in strict ISO mode only
+# when asked: every consumer's compile has to ask, not just the library's.
+defines = ["_GNU_SOURCE"]
 
 [artifacts.private.linux]
 include = ["lib/plat/unix"]
-defines = ["_GNU_SOURCE"]
 
 [artifacts.macos]
 sources = [
