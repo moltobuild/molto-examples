@@ -34,9 +34,9 @@ jobs:
         run: |
           if command -v apt-get >/dev/null; then
             apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -o Acquire::Retries=3 \
-              gcc make git curl ca-certificates tar xz-utils bzip2 zstd unzip nasm
+              gcc g++ make git curl ca-certificates tar xz-utils bzip2 zstd unzip nasm
           elif command -v dnf >/dev/null; then
-            dnf install -y gcc make git curl tar xz bzip2 zstd unzip findutils diffutils nasm
+            dnf install -y gcc gcc-c++ make git curl tar xz bzip2 zstd unzip findutils diffutils nasm
           else
             pacman -Syu --noconfirm gcc make git curl tar xz bzip2 zstd unzip diffutils nasm
           fi

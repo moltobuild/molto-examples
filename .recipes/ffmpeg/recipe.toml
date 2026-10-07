@@ -22,7 +22,7 @@ strip_prefix = "ffmpeg-9.0.2"
 system = "autotools"
 via = "delegate"
 args = [
-  "--cc={cc}", "--x86asmexe={nasm}", "--prefix=molto", "--enable-pic",
+  "--cc={cc}", "--cxx={cxx}", "--x86asmexe={nasm}", "--prefix=molto", "--enable-pic",
   "--disable-programs", "--disable-doc", "--disable-debug",
   "--disable-alsa", "--disable-sndio", "--disable-libxcb", "--disable-xlib", "--disable-sdl2",
   "--disable-vaapi", "--disable-vdpau", "--disable-libdrm", "--disable-vulkan",
@@ -47,6 +47,8 @@ goals = [
 
 [artifacts]
 type = "source"
+# Windows' screen capture filter is C++ (WinRT), compiled with {cxx}.
+cpp_std = "c++17"
 include = ["molto/include"]
 link = ["m"]
 # Not part of any library: the program swscale runs to generate its NEON
@@ -69,7 +71,7 @@ link = [
 [artifacts.windows]
 link = [
   "bcrypt", "ole32", "user32", "gdi32", "psapi", "shlwapi", "strmiids", "uuid", "oleaut32",
-  "mfuuid", "ws2_32", "secur32", "crypt32", "vfw32",
+  "mfuuid", "ws2_32", "secur32", "crypt32", "ncrypt", "vfw32",
 ]
 
 [deps]
