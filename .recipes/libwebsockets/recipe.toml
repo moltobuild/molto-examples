@@ -13,7 +13,10 @@ strip_prefix = "libwebsockets-5.0.0"
 # Upstream's CMake writes .molto-cmake/lws_config.h for this machine, finding
 # OpenSSL through the dependency below; molto compiles the library itself.
 # OpenSSL everywhere: HTTP/3 would switch to GnuTLS and Windows to SChannel.
-# No permessage-deflate (it needs zlib), no libcap, no test apps.
+# No permessage-deflate (it needs zlib), no libcap, no test apps, and no
+# subprocess spawning, stub IPC or system message distribution: upstream's
+# Windows code for those passes an int where a HANDLE belongs, which current
+# gcc refuses, and leaving them out everywhere keeps one library everywhere.
 [build]
 system = "cmake"
 via = "delegate"
@@ -21,6 +24,7 @@ args = [
   "-DLWS_WITH_SSL=ON", "-DLWS_WITH_HTTP3=OFF", "-DLWS_WITH_SCHANNEL=OFF",
   "-DLWS_WITH_LIBCAP=OFF", "-DLWS_WITHOUT_EXTENSIONS=ON", "-DLWS_WITHOUT_TESTAPPS=ON",
   "-DLWS_WITH_MINIMAL_EXAMPLES=OFF", "-DLWS_WITH_SHARED=OFF", "-DLWS_WITH_STATIC=ON",
+  "-DLWS_WITH_STUB=OFF", "-DLWS_WITH_SPAWN=OFF", "-DLWS_WITH_SYS_SMD=OFF",
 ]
 
 # What CMake compiles into the static library with these options, read off its
@@ -35,7 +39,7 @@ sources = [
   "lib/core-net/client/connect4.c", "lib/core-net/client/sort-dns.c", "lib/core-net/close.c",
   "lib/core-net/dummy-callback.c", "lib/core-net/network.c", "lib/core-net/output.c",
   "lib/core-net/pollfd.c", "lib/core-net/service.c", "lib/core-net/sorted-usec-list.c",
-  "lib/core-net/state.c", "lib/core-net/stub.c", "lib/core-net/txpacer.c",
+  "lib/core-net/state.c", "lib/core-net/txpacer.c",
   "lib/core-net/vhost.c", "lib/core-net/wol.c", "lib/core-net/wsi-timeout.c",
   "lib/core-net/wsi.c", "lib/core/adapt.c", "lib/core/alloc.c", "lib/core/buflist.c",
   "lib/core/context.c", "lib/core/libwebsockets.c", "lib/core/logs.c", "lib/core/lws_dll2.c",
@@ -62,7 +66,7 @@ sources = [
   "lib/secure-streams/secure-streams.c",
   "lib/secure-streams/system/captive-portal-detect/captive-portal-detect.c",
   "lib/secure-streams/system/fetch-policy/fetch-policy.c", "lib/system/policy.c",
-  "lib/system/smd/smd.c", "lib/system/stdin.c", "lib/system/system.c", "lib/tls/chacha.c",
+  "lib/system/stdin.c", "lib/system/system.c", "lib/tls/chacha.c",
   "lib/tls/lws-genchacha.c", "lib/tls/lws-gencrypto-common.c", "lib/tls/lws-genec-common.c",
   "lib/tls/openssl/lws-genaes.c", "lib/tls/openssl/lws-gencrypto.c",
   "lib/tls/openssl/lws-genec.c", "lib/tls/openssl/lws-genhash.c",
@@ -91,7 +95,7 @@ sources = [
   "lib/roles/netlink/ops-netlink.c", "lib/core-net/route.c",
   "lib/plat/unix/unix-caps.c", "lib/plat/unix/unix-fds.c", "lib/plat/unix/unix-file.c",
   "lib/plat/unix/unix-init.c", "lib/plat/unix/unix-misc.c", "lib/plat/unix/unix-pipe.c",
-  "lib/plat/unix/unix-service.c", "lib/plat/unix/unix-sockets.c", "lib/plat/unix/unix-spawn.c",
+  "lib/plat/unix/unix-service.c", "lib/plat/unix/unix-sockets.c", 
 ]
 link = ["pthread"]
 # libwebsockets.h names siginfo_t, which glibc declares in strict ISO mode only
@@ -105,7 +109,7 @@ include = ["lib/plat/unix"]
 sources = [
   "lib/plat/unix/unix-caps.c", "lib/plat/unix/unix-fds.c", "lib/plat/unix/unix-file.c",
   "lib/plat/unix/unix-init.c", "lib/plat/unix/unix-misc.c", "lib/plat/unix/unix-pipe.c",
-  "lib/plat/unix/unix-service.c", "lib/plat/unix/unix-sockets.c", "lib/plat/unix/unix-spawn.c",
+  "lib/plat/unix/unix-service.c", "lib/plat/unix/unix-sockets.c", 
 ]
 
 [artifacts.private.macos]
@@ -119,7 +123,7 @@ sources = [
   "lib/plat/windows/windows-init.c", "lib/plat/windows/windows-misc.c",
   "lib/plat/windows/windows-pipe.c", "lib/plat/windows/windows-plugins.c",
   "lib/plat/windows/windows-service.c", "lib/plat/windows/windows-sockets.c",
-  "lib/plat/windows/windows-spawn.c",
+  
 ]
 link = ["ws2_32", "userenv", "psapi", "iphlpapi", "crypt32"]
 # libwebsockets, its public headers included, tests WIN32, which a compiler in
