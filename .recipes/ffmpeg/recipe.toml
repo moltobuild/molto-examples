@@ -13,7 +13,8 @@ strip_prefix = "ffmpeg-9.0.2"
 # Every library and every component FFmpeg builds on its own: all its decoders,
 # encoders, formats, filters and protocols, its SIMD assembly (NEON in .S on
 # ARM, NASM on x86) and the platform's hardware video (VideoToolbox on macOS,
-# D3D11VA and DXVA2 on Windows), which configure finds in the system's SDK.
+# D3D11VA and DXVA2 on Windows), which configure finds in the system's SDK;
+# with Xcode's Metal compiler, macOS also gets its Metal deinterlacer.
 # What it would find only on some machines of one OS is turned off, so a
 # platform builds the same FFmpeg everywhere: X11, ALSA, SDL, VA-API and VDPAU,
 # Vulkan, CUDA, AMF, V4L2. LGPL: nothing GPL or non-free is enabled.
@@ -26,11 +27,15 @@ args = [
   "--disable-alsa", "--disable-sndio", "--disable-libxcb", "--disable-xlib", "--disable-sdl2",
   "--disable-vaapi", "--disable-vdpau", "--disable-libdrm", "--disable-vulkan",
   "--disable-cuda-llvm", "--disable-ffnvcodec", "--disable-amf", "--disable-v4l2-m2m",
-  "--disable-zlib", "--disable-bzlib", "--disable-lzma", "--disable-iconv",
+  "--disable-bzlib", "--disable-lzma", "--disable-iconv",
 ]
 # The public headers, with the two configure and make generate, under
 # molto/include, where a consumer's #include <libavcodec/avcodec.h> finds them.
 targets = ["install-headers"]
+# zlib (PNG, compressed Matroska and FLV tracks, HTTP gzip, …) comes from the
+# registry: molto builds it before configure runs, so configure's probe for -lz
+# finds it.
+libraries = { zlib = "z" }
 # What make compiles into the seven libraries.
 sources = "make"
 goals = [
@@ -56,8 +61,8 @@ link = [
   "pthread", "AudioToolbox.framework", "AVFoundation.framework", "AppKit.framework",
   "CoreAudio.framework", "CoreFoundation.framework", "CoreGraphics.framework",
   "CoreImage.framework", "CoreMedia.framework", "CoreServices.framework",
-  "CoreVideo.framework", "Foundation.framework", "OpenGL.framework", "Security.framework",
-  "VideoToolbox.framework",
+  "CoreVideo.framework", "Foundation.framework", "Metal.framework", "OpenGL.framework",
+  "Security.framework", "VideoToolbox.framework",
 ]
 
 [artifacts.windows]
@@ -65,6 +70,9 @@ link = [
   "bcrypt", "ole32", "user32", "gdi32", "psapi", "shlwapi", "strmiids", "uuid", "oleaut32",
   "mfuuid", "ws2_32", "secur32", "crypt32", "vfw32",
 ]
+
+[deps]
+zlib = "1.3.1"
 
 [about]
 description = "FFmpeg 9.0.2: every codec, format, filter and device it builds on its own, with SIMD and the platform's hardware video"
