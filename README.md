@@ -9,6 +9,7 @@ of its own: a `Project.toml`, its sources, its tests, and nothing else to set up
 | [`wordcount`](wordcount/) | A `wc` clone: a C23 executable, `[target].requires` answered by pickup, tests that bring their own `main()` |
 | [`calculator`](calculator/) | A GTK 4 desktop app: a dependency from the registry that downloads each platform's own GTK, and a moltest suite |
 | [`todo`](todo/) | Two registry dependencies at once — GTK as a platform recipe, SQLite as a source recipe — and a store tested against a real database |
+| [`hello_api`](hello_api/) | A REST API on libwebsockets: a source recipe that upstream's own CMake configures, with OpenSSL as its dependency |
 
 ## Running one
 
@@ -86,6 +87,25 @@ you go.
 ```sh
 cd todo
 molto run
+```
+
+### hello_api
+
+A hello-world REST API: `GET /hello/{name}` answers `{"message":"Hello, {name}!"}`.
+
+- **`libwebsockets = "5.0.0"`** is a source recipe configured by upstream's own
+  CMake (`via = "delegate"`): molto runs it once per compiler, on this machine,
+  then compiles the library itself. Its OpenSSL dependency comes along.
+- **The routes know nothing of sockets.** `src/routes.c` maps a method and a
+  path to a status and a JSON body, and is what the tests exercise; `src/main.c`
+  is only the server.
+- Configuring needs `cmake` and `ninja`: the system's if installed, otherwise
+  `pickup install cmake ninja`.
+
+```sh
+cd hello_api
+molto run
+curl localhost:8080/hello/ana
 ```
 
 ## Adding an example
