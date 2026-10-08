@@ -9,6 +9,7 @@ of its own: a `Project.toml`, its sources, its tests, and nothing else to set up
 | [`wordcount`](wordcount/) | A `wc` clone: a C23 executable, `[target].requires` answered by pickup, tests that bring their own `main()` |
 | [`calculator`](calculator/) | A GTK 4 desktop app: a dependency from the registry that downloads each platform's own GTK, and a moltest suite |
 | [`todo`](todo/) | Two registry dependencies at once — GTK as a platform recipe, SQLite as a source recipe — and a store tested against a real database |
+| [`items_api`](items_api/) | An items CRUD API: libwebsockets, libpq, PostgreSQL in Docker Compose, route and SQL mocks, and coverage |
 | [`hello_api`](hello_api/) | A REST API on libwebsockets: a source recipe that upstream's own CMake configures, with OpenSSL as its dependency |
 | [`piano`](piano/) | A piano played with the mouse: SDL 3 for the window and the sound, FFmpeg to read samples and record what is played |
 

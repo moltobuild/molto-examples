@@ -1,0 +1,4 @@
+# Models, routing and bound SQL are covered by unit tests with database mocks.
+# The transport is validated separately with scripts/smoke.py and PostgreSQL.
+lcov = "build/coverage.lcov"
+json = "build/coverage.json"
