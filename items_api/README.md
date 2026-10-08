@@ -112,8 +112,21 @@ molto test --profile coverage
 molto build --profile release
 
 # Optional live check, while molto run is running and the database is up.
-python3 scripts/smoke.py
+bash scripts/smoke.sh
 ```
+
+The Bash smoke test requires `curl` and `jq`. On Windows, use Windows PowerShell
+5.1 or PowerShell 7+; no external JSON or HTTP tools are required:
+
+```powershell
+powershell -NoProfile -File scripts/smoke.ps1
+# Or with PowerShell 7+: pwsh -NoProfile -File scripts/smoke.ps1
+```
+
+Both scripts accept an optional API URL (`bash scripts/smoke.sh http://localhost:8080`
+or `powershell -NoProfile -File scripts/smoke.ps1 -BaseUrl http://localhost:8080`).
+They check CRUD, pagination, timestamps and HTTP errors, return a nonzero exit
+code on failure, and remove their own item even if a check fails.
 
 Unit tests run without Docker or a database. Moltest checks validation and
 configuration; moltest-mock replaces repository results for routes and
@@ -151,7 +164,9 @@ items_api/
 │   ├── repositories/items.c   # parameterized SQL
 │   └── routes/items.c         # HTTP routing and response mapping
 ├── tests/{config,db,models,repositories,routes}/
-└── scripts/smoke.py           # optional live PostgreSQL API check
+└── scripts/                   # equivalent live PostgreSQL API checks
+    ├── smoke.sh               # Bash with curl and jq
+    └── smoke.ps1              # Windows PowerShell 5.1 / PowerShell 7+
 ```
 
 Stop the database with `docker compose down`; this retains its data.
