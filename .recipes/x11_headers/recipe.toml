@@ -11,12 +11,12 @@ version = "1.8.7"
 target = "any"
 
 [about]
-description = "The Xlib headers and their extensions (Xext, Xcursor, Xi, Xfixes, Xrandr, Xrender, Xss), from each distribution's packages, for code that loads libX11 at run time"
+description = "The Xlib headers and their extensions (Xext, Xcursor, Xi, Xfixes, Xrandr, Xrender, Xss, Xtst), from each distribution's packages, for code that loads libX11 at run time"
 license = "MIT"
 homepage = "https://www.x.org"
 
 [host]
-pkgconfig = "x11 xext xcursor xi xfixes xrandr xrender xscrnsaver"
+pkgconfig = "x11 xext xcursor xi xfixes xrandr xrender xscrnsaver xtst"
 
 [[platform]]
 name = "ubuntu-24.04-x86_64"
@@ -116,6 +116,14 @@ sha256 = "8191b3708be90719bcd90b0be5f50cd8490409f87a6d4af2786c077d742229fd"
 [[platform.file]]
 url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/libx/libxss/libxss1_1.2.3-1build3_amd64.deb"
 sha256 = "0ac60a2cc034ccc4bf4e2f846f38110469d7ae43b47e808d67aafc538bc3695e"
+
+[[platform.file]]
+url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/libx/libxtst/libxtst-dev_1.2.3-1.1build1_amd64.deb"
+sha256 = "5e58b091af5e7de9b59ce75eb1a942aed5cacd6a515b8d83876319f5a30b716e"
+
+[[platform.file]]
+url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/libx/libxtst/libxtst6_1.2.3-1.1build1_amd64.deb"
+sha256 = "632d74c760f0a4e844c499e7bc1eca4c709aa096fde783a7a6807604aef77545"
 
 [[platform.file]]
 url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/x/xorgproto/x11proto-dev_2023.2-1_all.deb"
@@ -221,6 +229,14 @@ url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/libx/libxss
 sha256 = "04339441bb49c8b9c6d3297bb569b3b774de61e422f5e7334c34225b08709035"
 
 [[platform.file]]
+url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/libx/libxtst/libxtst-dev_1.2.5-1build1_amd64.deb"
+sha256 = "6468b2ab27cc6a92402b23e67f19480897674c592e1321610c1cda08ec5ae0a1"
+
+[[platform.file]]
+url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/libx/libxtst/libxtst6_1.2.5-1build1_amd64.deb"
+sha256 = "c150c1bacec599cf70609ce1236fd06accacd96e280205090bdd57fd73ee0e4b"
+
+[[platform.file]]
 url = "https://snapshot.ubuntu.com/ubuntu/20261005T000000Z/pool/main/x/xorgproto/x11proto-dev_2025.1-1_all.deb"
 sha256 = "a800a05f9e22011add40fe7deef712be53c721d9e23281bfd07ede46e514dd45"
 
@@ -308,6 +324,14 @@ url = "https://kojipkgs.fedoraproject.org/packages/libXrender/0.9.12/4.fc44/x86_
 sha256 = "3a3dcb1c0cc21641e6bab32b6896c3f7b95ac5810566ab619b45546d972d78cf"
 
 [[platform.file]]
+url = "https://kojipkgs.fedoraproject.org/packages/libXtst/1.2.5/4.fc44/x86_64/libXtst-1.2.5-4.fc44.x86_64.rpm"
+sha256 = "39f422e202f1d6103d114644094c371dbc203b2f704dc857c0b25782f1e05d10"
+
+[[platform.file]]
+url = "https://kojipkgs.fedoraproject.org/packages/libXtst/1.2.5/4.fc44/x86_64/libXtst-devel-1.2.5-4.fc44.x86_64.rpm"
+sha256 = "a487bbd8dfa541e12f8bfac48f6d6d4c3385a3cef0983fdcd446af2c9293b0ea"
+
+[[platform.file]]
 url = "https://kojipkgs.fedoraproject.org/packages/libxcb/1.17.0/7.fc44/x86_64/libxcb-1.17.0-7.fc44.x86_64.rpm"
 sha256 = "3a0bcbb1312a9b9020fd254e474e306388a4b2586f425b52706c8cd339c89f78"
 
@@ -372,6 +396,10 @@ sha256 = "fed0389073d5b107074eaab48cefcc2716e607865142cde5b579c8ceeefea142"
 [[platform.file]]
 url = "https://archive.archlinux.org/packages/l/libxss/libxss-1.2.5-1-x86_64.pkg.tar.zst"
 sha256 = "79fd8fc47e77f479e6e4229a6957f26a6dd549bac7e047bafecdcaf5fde58889"
+
+[[platform.file]]
+url = "https://archive.archlinux.org/packages/l/libxtst/libxtst-1.2.5-1-x86_64.pkg.tar.zst"
+sha256 = "7e036fc4ae02ec16d09efed08b111e33d4753aa959d12148461d653659a9f529"
 
 [[platform.file]]
 url = "https://archive.archlinux.org/packages/x/xorgproto/xorgproto-2025.1-1-any.pkg.tar.zst"
