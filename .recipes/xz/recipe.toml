@@ -1,0 +1,37 @@
+schema = 5
+form = "source"
+kind = "package"
+name = "xz"
+version = "5.8.4"
+target = "any"
+
+[source]
+archive = "https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.gz"
+sha256 = "0014c7886930454fe8bd4228665b51af55eeae560ea135c9c4cd33f55b2591d9"
+strip_prefix = "xz-5.8.4"
+
+# liblzma, configured by upstream's CMake, which also says what to compile
+# (molto RFC-0025): static, threaded, every filter, no command line tools,
+# no translations and no tests.
+[build]
+system = "cmake"
+via = "delegate"
+args = [
+  "-DBUILD_SHARED_LIBS=OFF", "-DXZ_NLS=OFF", "-DXZ_TOOL_XZ=OFF", "-DXZ_TOOL_XZDEC=OFF",
+  "-DXZ_TOOL_LZMADEC=OFF", "-DXZ_TOOL_LZMAINFO=OFF", "-DBUILD_TESTING=OFF",
+]
+sources = "cmake"
+
+[artifacts]
+type = "source"
+include = ["src/liblzma/api"]
+
+# A static liblzma on Windows: without this, lzma.h declares every function
+# as imported from a DLL.
+[artifacts.windows]
+defines = ["LZMA_API_STATIC"]
+
+[about]
+description = "liblzma 5.8.4: XZ and LZMA compression, from XZ Utils"
+license = "0BSD"
+homepage = "https://tukaani.org/xz/"

@@ -1,0 +1,33 @@
+schema = 4
+form = "source"
+kind = "package"
+name = "bzip2"
+version = "1.0.8"
+target = "any"
+
+[source]
+archive = "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
+sha256 = "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269"
+strip_prefix = "bzip2-1.0.8"
+
+# libbz2 is plain C with nothing to configure: its seven sources, as
+# upstream's Makefile compiles them into libbz2.a.
+[build]
+system = "none"
+
+[artifacts]
+type = "source"
+std = "c99"
+sources = [
+  "blocksort.c", "huffman.c", "crctable.c", "randtable.c", "compress.c", "decompress.c",
+  "bzlib.c",
+]
+include = ["."]
+
+[artifacts.private]
+defines = ["_FILE_OFFSET_BITS=64"]
+
+[about]
+description = "libbz2 1.0.8: the bzip2 compression library"
+license = "bzip2-1.0.6"
+homepage = "https://sourceware.org/bzip2/"

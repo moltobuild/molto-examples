@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  MOLTO_REF: feat/sources-from-build
+  MOLTO_REF: feat/configure-sees-dependencies
   PICKUP_REF: master
 
 jobs:
@@ -50,6 +50,8 @@ jobs:
         run: |
           make -C .pickup build CC=gcc
           install .pickup/build/pickup /usr/local/bin/pickup
+          command -v cmake >/dev/null || pickup install cmake
+          command -v ninja >/dev/null || pickup install ninja
       - uses: actions/checkout@v4
         with:
           repository: moltobuild/molto
@@ -77,6 +79,8 @@ jobs:
           make -C .pickup build CC=clang
           mkdir -p "$HOME/bin" && cp .pickup/build/pickup "$HOME/bin/pickup"
           echo "$HOME/bin" >> "$GITHUB_PATH"
+          command -v cmake >/dev/null || "$HOME/bin/pickup" install cmake
+          command -v ninja >/dev/null || "$HOME/bin/pickup" install ninja
       - uses: actions/checkout@v4
         with:
           repository: moltobuild/molto
@@ -117,6 +121,8 @@ jobs:
         run: |
           make -C .pickup build CC=gcc
           mkdir -p "$HOME/bin" && cp .pickup/build/pickup.exe "$HOME/bin/pickup.exe"
+          command -v cmake >/dev/null || "$HOME/bin/pickup.exe" install cmake
+          command -v ninja >/dev/null || "$HOME/bin/pickup.exe" install ninja
       - uses: actions/checkout@v4
         with:
           repository: moltobuild/molto
