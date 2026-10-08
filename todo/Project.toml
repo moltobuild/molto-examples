@@ -23,7 +23,7 @@ flags = ["-Wall", "-Wextra"]
 mode = "single"
 
 [dev-deps]
-moltest = { git = "https://github.com/moltobuild/moltest", tag = "v0.3.0" }
+moltest = { git = "https://github.com/moltobuild/moltest", tag = "v0.4.0" }
 
 [profile.debug]
 opt_level = 0

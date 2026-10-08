@@ -23,7 +23,8 @@ dependencies = ["zlib"]
 
 [[package]]
 name = "moltest"
-source = "git+https://github.com/moltobuild/moltest#v0.3.0"
+version = "0.4.0"
+source = "git+https://github.com/moltobuild/moltest#v0.4.0"
 scopes = ["dev"]
 dependencies = []
 
