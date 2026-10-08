@@ -49,6 +49,12 @@ link = [
 [artifacts.linux]
 link = ["m", "pthread", "dl"]
 
+# On Linux SDL loads X11 and ALSA at run time and configures against their
+# headers; nothing of them is linked.
+[deps]
+x11_headers = { path = "../x11_headers", os = ["linux"] }
+alsa_headers = { path = "../alsa_headers", os = ["linux"] }
+
 [about]
 description = "SDL 3.4.18: windows, graphics, audio, input and more, the same API on every platform"
 license = "Zlib"

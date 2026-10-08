@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  MOLTO_REF: feat/configure-sees-dependencies
+  MOLTO_REF: feat/deps-per-os
   PICKUP_REF: master
 
 jobs:
