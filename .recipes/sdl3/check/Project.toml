@@ -1,0 +1,10 @@
+[package]
+name = "sdl3_check"
+version = "0.1.0"
+artifact = "executable"
+
+[target]
+std = "c17"
+
+[deps]
+sdl3 = { path = ".." }

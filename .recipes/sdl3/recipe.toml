@@ -1,0 +1,55 @@
+schema = 5
+form = "source"
+kind = "package"
+name = "sdl3"
+version = "3.4.18"
+target = "any"
+
+[source]
+archive = "https://github.com/libsdl-org/SDL/releases/download/release-3.4.18/SDL3-3.4.18.tar.gz"
+sha256 = "9c75cf16330322c217dedd2e0609f1124f1b54b8633e763467b4684d0f4334a3"
+strip_prefix = "SDL3-3.4.18"
+
+# SDL configured by its own CMake, which also says what to compile (molto
+# RFC-0025): the static library with every subsystem upstream builds on the
+# platform, and none of its tests or examples.
+[build]
+system = "cmake"
+via = "delegate"
+args = [
+  "-DSDL_SHARED=OFF", "-DSDL_STATIC=ON", "-DSDL_TEST_LIBRARY=OFF", "-DSDL_TESTS=OFF",
+  "-DSDL_EXAMPLES=OFF", "-DSDL_INSTALL=OFF",
+  # A precompiled header is something CMake's own build makes, and molto
+  # compiles the sources instead.
+  "-DCMAKE_DISABLE_PRECOMPILE_HEADERS=ON",
+]
+sources = "cmake"
+
+[artifacts]
+type = "source"
+cpp_std = "c++17"
+include = ["include"]
+
+# What SDL's own CMake links the static library with (SDL3staticTargets).
+[artifacts.macos]
+link = [
+  "m", "CoreMedia.framework", "CoreVideo.framework", "Cocoa.framework",
+  "UniformTypeIdentifiers.framework", "IOKit.framework", "ForceFeedback.framework",
+  "Carbon.framework", "CoreAudio.framework", "AudioToolbox.framework",
+  "AVFoundation.framework", "Foundation.framework", "GameController.framework",
+  "Metal.framework", "QuartzCore.framework", "CoreHaptics.framework",
+]
+
+[artifacts.windows]
+link = [
+  "kernel32", "user32", "gdi32", "winmm", "imm32", "ole32", "oleaut32", "version", "uuid",
+  "advapi32", "setupapi", "shell32", "dinput8",
+]
+
+[artifacts.linux]
+link = ["m", "pthread", "dl"]
+
+[about]
+description = "SDL 3.4.18: windows, graphics, audio, input and more, the same API on every platform"
+license = "Zlib"
+homepage = "https://libsdl.org"

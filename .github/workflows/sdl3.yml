@@ -1,0 +1,135 @@
+name: sdl3
+
+# SDL 3 from its release tarball, configured by its own CMake, compiled by
+# molto (RFC-0025). The recipe rides along under .recipes/ until it is published.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  MOLTO_REF: master
+  PICKUP_REF: master
+
+jobs:
+  linux:
+    name: ${{ matrix.image }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    container: ${{ matrix.image }}
+    strategy:
+      fail-fast: false
+      matrix:
+        image: ["ubuntu:24.04", "ubuntu:26.04", "fedora:44", "archlinux:latest"]
+    steps:
+      - name: Tools
+        run: |
+          if command -v apt-get >/dev/null; then
+            apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -o Acquire::Retries=3 \
+              gcc g++ make git curl ca-certificates tar xz-utils bzip2 zstd unzip nasm
+          elif command -v dnf >/dev/null; then
+            dnf install -y gcc gcc-c++ make git curl tar xz bzip2 zstd unzip findutils diffutils nasm
+          else
+            pacman -Syu --noconfirm gcc make git curl tar xz bzip2 zstd unzip diffutils nasm
+          fi
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/pickup
+          ref: ${{ env.PICKUP_REF }}
+          path: .pickup
+      - name: pickup
+        run: |
+          make -C .pickup build CC=gcc
+          install .pickup/build/pickup /usr/local/bin/pickup
+          command -v cmake >/dev/null || pickup install cmake
+          command -v ninja >/dev/null || pickup install ninja
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=gcc
+      - name: sdl3
+        timeout-minutes: 45
+        run: cd .recipes/sdl3/check && "$GITHUB_WORKSPACE/.molto/build/molto" run
+
+  macos:
+    name: macOS arm64
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/pickup
+          ref: ${{ env.PICKUP_REF }}
+          path: .pickup
+      - name: pickup
+        run: |
+          make -C .pickup build CC=clang
+          mkdir -p "$HOME/bin" && cp .pickup/build/pickup "$HOME/bin/pickup"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          command -v cmake >/dev/null || "$HOME/bin/pickup" install cmake
+          command -v ninja >/dev/null || "$HOME/bin/pickup" install ninja
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=clang
+      - name: sdl3
+        timeout-minutes: 45
+        run: cd .recipes/sdl3/check && "$GITHUB_WORKSPACE/.molto/build/molto" run
+
+  windows:
+    name: Windows (MinGW-w64, MSYS2)
+    runs-on: windows-2022
+    timeout-minutes: 80
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: >-
+            git
+            make
+            unzip
+            diffutils
+            mingw-w64-x86_64-gcc
+            mingw-w64-x86_64-nasm
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/pickup
+          ref: ${{ env.PICKUP_REF }}
+          path: .pickup
+      - name: pickup
+        run: |
+          make -C .pickup build CC=gcc
+          mkdir -p "$HOME/bin" && cp .pickup/build/pickup.exe "$HOME/bin/pickup.exe"
+          command -v cmake >/dev/null || "$HOME/bin/pickup.exe" install cmake
+          command -v ninja >/dev/null || "$HOME/bin/pickup.exe" install ninja
+      - uses: actions/checkout@v4
+        with:
+          repository: moltobuild/molto
+          ref: ${{ env.MOLTO_REF }}
+          path: .molto
+      - name: Build molto
+        run: make -C .molto build CC=gcc
+      - name: sdl3
+        timeout-minutes: 60
+        run: |
+          export MOLTO_PICKUP="$HOME/bin/pickup.exe"
+          cd .recipes/sdl3/check && "$GITHUB_WORKSPACE/.molto/build/molto.exe" run
