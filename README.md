@@ -10,6 +10,7 @@ of its own: a `Project.toml`, its sources, its tests, and nothing else to set up
 | [`calculator`](calculator/) | A GTK 4 desktop app: a dependency from the registry that downloads each platform's own GTK, and a moltest suite |
 | [`todo`](todo/) | Two registry dependencies at once — GTK as a platform recipe, SQLite as a source recipe — and a store tested against a real database |
 | [`hello_api`](hello_api/) | A REST API on libwebsockets: a source recipe that upstream's own CMake configures, with OpenSSL as its dependency |
+| [`piano`](piano/) | A piano played with the mouse: SDL 3 for the window and the sound, FFmpeg to read samples and record what is played |
 
 ## Running one
 
@@ -106,6 +107,28 @@ A hello-world REST API: `GET /hello/{name}` answers `{"message":"Hello, {name}!"
 cd hello_api
 molto run
 curl localhost:8080/hello/ana
+```
+
+### piano
+
+A two-octave piano: click or drag across the keys, or type on the home row; R
+records what you play.
+
+- **Two large source recipes at once.** `sdl3` is configured by SDL's CMake and
+  `ffmpeg` by FFmpeg's `configure`, each once per compiler on this machine,
+  then molto compiles both into the build with the project's compiler.
+- **FFmpeg on both sides.** `--sample FILE` decodes any audio FFmpeg reads and
+  resamples it for the synth; R encodes the output to FLAC, WAV or AAC, chosen
+  by extension. The tests write each format and read it back.
+- **The sound knows nothing of the window.** `src/synth.c` renders voices into a
+  float buffer and is tested by its pitch and fade; `src/main.c` hands it to
+  SDL's audio thread.
+- Configuring needs `cmake` and `ninja` for SDL (`pickup install cmake ninja`),
+  and NASM for FFmpeg's assembly on x86 (`pickup install nasm`).
+
+```sh
+cd piano
+molto run
 ```
 
 ## Adding an example

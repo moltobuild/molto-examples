@@ -1,0 +1,38 @@
+[package]
+name = "piano"
+version = "0.1.0"
+artifact = "executable"   # executable | static | shared
+description = "A piano played with the mouse: SDL 3 for the window and the sound, FFmpeg for samples and recordings"
+# license = "MIT"       # an SPDX expression: MIT OR Apache-2.0
+# homepage = ""
+# repository = ""
+# authors = []
+
+[target]
+std = "c17"            # C standard passed as -std=
+include = ["include"]  # -Iinclude: the project's own headers
+# compiler = "gcc"     # gcc | clang | msvc; absent = autodetect
+# cpp_std = "c++17"    # C++ standard for C++ translation units
+# link = ["m"]         # system libraries: -lm
+# defines = []         # -D...
+flags = ["-Wall", "-Wextra"]
+
+[test]
+# moltest registers the tests and owns main(); the suite links everything in
+# src/ except src/main.c, which is the window.
+mode = "single"
+
+[dev-deps]
+moltest = { git = "https://github.com/moltobuild/moltest", tag = "v0.3.0" }
+
+[profile.debug]
+opt_level = 0
+debug_info = true
+
+[profile.release]
+opt_level = 3
+debug_info = false
+
+[deps]
+sdl3 = "3.4.18"
+ffmpeg = "9.0.2"
