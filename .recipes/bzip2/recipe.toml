@@ -25,7 +25,8 @@ sources = [
 include = ["."]
 
 [artifacts.private]
-defines = ["_FILE_OFFSET_BITS=64"]
+# fdopen is POSIX, and -std=c99 alone hides it from glibc.
+defines = ["_FILE_OFFSET_BITS=64", "_POSIX_C_SOURCE=200809L"]
 
 [about]
 description = "libbz2 1.0.8: the bzip2 compression library"
